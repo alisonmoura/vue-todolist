@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuejs Todolist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar"></nav>
+        <main>
+            <h1 class="title">{{title}}</h1>
+            <section class="todo-list">
+                <div v-for="(todo, i) in todos" :class="['todo-item', {'done': todo.done}]" @click="turnDone(i)">
+                    <p>{{todo.text}}</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
