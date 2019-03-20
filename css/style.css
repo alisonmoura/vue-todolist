@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
 * {
     --var-primary: rgb(89, 203, 89);
-    --var-dark: rgb(38, 106, 38);
+    --var-dark: rgb(63, 175, 63);
     --var-disable: rgb(220, 218, 218);
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .title {
